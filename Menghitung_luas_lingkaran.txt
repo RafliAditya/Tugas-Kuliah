@@ -1,0 +1,26 @@
+PROGRAM Menghitung_Luas_Lingkaran;
+
+USES
+WinCrt;  
+
+CONST
+pi=3.14;
+
+VAR
+  r    :integer;
+  luas :real;
+  
+BEGIN
+      
+	writeln('Menghitung Luas Lingkaran');
+	writeln('');
+
+        writeln('Inputkan Nilai Jari-Jari : (cm)');
+	readln(r);
+
+	luas := pi*r*r;
+
+        writeln('');
+	writeln('Luas Lingkaran : ',luas:4:2,' cm^2');
+
+END.
